@@ -1,5 +1,5 @@
-import 'package:etherwallet/components/copyButton/copy_button.dart';
-import 'package:etherwallet/utils/eth_amount_formatter.dart';
+import 'package:metanoniawallet/components/copyButton/copy_button.dart';
+import 'package:metanoniawallet/utils/eth_amount_formatter.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 

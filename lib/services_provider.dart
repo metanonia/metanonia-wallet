@@ -1,8 +1,8 @@
-import 'package:etherwallet/app_config.dart';
-import 'package:etherwallet/service/address_service.dart';
-import 'package:etherwallet/service/configuration_service.dart';
-import 'package:etherwallet/service/contract_service.dart';
-import 'package:etherwallet/utils/contract_parser.dart';
+import 'package:metanoniawallet/app_config.dart';
+import 'package:metanoniawallet/service/address_service.dart';
+import 'package:metanoniawallet/service/configuration_service.dart';
+import 'package:metanoniawallet/service/contract_service.dart';
+import 'package:metanoniawallet/utils/contract_parser.dart';
 import 'package:http/http.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';

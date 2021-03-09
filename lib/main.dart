@@ -1,6 +1,6 @@
-import 'package:etherwallet/app_config.dart';
-import 'package:etherwallet/router.dart';
-import 'package:etherwallet/services_provider.dart';
+import 'package:metanoniawallet/app_config.dart';
+import 'package:metanoniawallet/router.dart';
+import 'package:metanoniawallet/services_provider.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

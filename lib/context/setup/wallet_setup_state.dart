@@ -1,4 +1,4 @@
-import 'package:etherwallet/model/wallet_setup.dart';
+import 'package:metanoniawallet/model/wallet_setup.dart';
 
 abstract class WalletSetupAction {}
 

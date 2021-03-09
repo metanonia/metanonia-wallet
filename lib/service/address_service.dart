@@ -1,6 +1,6 @@
-import 'package:etherwallet/service/configuration_service.dart';
+import 'package:metanoniawallet/service/configuration_service.dart';
 import 'package:bip39/bip39.dart' as bip39;
-import 'package:etherwallet/utils/hd_key.dart';
+import 'package:metanoniawallet/utils/hd_key.dart';
 import "package:hex/hex.dart";
 import 'package:web3dart/credentials.dart';
 

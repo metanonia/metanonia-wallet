@@ -1,7 +1,7 @@
-import 'package:etherwallet/context/setup/wallet_setup_handler.dart';
-import 'package:etherwallet/context/setup/wallet_setup_state.dart';
-import 'package:etherwallet/model/wallet_setup.dart';
-import 'package:etherwallet/service/address_service.dart';
+import 'package:metanoniawallet/context/setup/wallet_setup_handler.dart';
+import 'package:metanoniawallet/context/setup/wallet_setup_state.dart';
+import 'package:metanoniawallet/model/wallet_setup.dart';
+import 'package:metanoniawallet/service/address_service.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 

@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:etherwallet/context/transfer/wallet_transfer_state.dart';
-import 'package:etherwallet/model/wallet_transfer.dart';
-import 'package:etherwallet/service/configuration_service.dart';
-import 'package:etherwallet/service/contract_service.dart';
+import 'package:metanoniawallet/context/transfer/wallet_transfer_state.dart';
+import 'package:metanoniawallet/model/wallet_transfer.dart';
+import 'package:metanoniawallet/service/configuration_service.dart';
+import 'package:metanoniawallet/service/contract_service.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:web3dart/credentials.dart';
 

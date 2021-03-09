@@ -1,7 +1,7 @@
-import 'package:etherwallet/model/wallet.dart';
-import 'package:etherwallet/service/address_service.dart';
-import 'package:etherwallet/service/configuration_service.dart';
-import 'package:etherwallet/service/contract_service.dart';
+import 'package:metanoniawallet/model/wallet.dart';
+import 'package:metanoniawallet/service/address_service.dart';
+import 'package:metanoniawallet/service/configuration_service.dart';
+import 'package:metanoniawallet/service/contract_service.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:web3dart/web3dart.dart' as web3;
 

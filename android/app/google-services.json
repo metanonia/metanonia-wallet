@@ -1,35 +1,41 @@
 {
   "project_info": {
-    "project_number": "1087248227022",
-    "firebase_url": "https://etherwallet-18c58.firebaseio.com",
-    "project_id": "etherwallet-18c58",
-    "storage_bucket": "etherwallet-18c58.appspot.com"
+    "project_number": "477027457338",
+    "project_id": "metanoniawallet",
+    "storage_bucket": "metanoniawallet.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1087248227022:android:a6caf26e51a7fbe5",
+        "mobilesdk_app_id": "1:477027457338:android:4e163f5ebdddd132189803",
         "android_client_info": {
-          "package_name": "dev.clempe.etherwallet"
+          "package_name": "com.metanonia.wallet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1087248227022-8k648l9jcc33da5d0hdd8me46eaeqira.apps.googleusercontent.com",
+          "client_id": "477027457338-o8c47au8qn756b0ilgmgat9pmjpg6din.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDAV_JhknsPbDt-VoLCNnYLvtCwJm57GCE"
+          "current_key": "AIzaSyAO06CTtABcEYSDltnCsPN4kYK1acp4h_A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1087248227022-8k648l9jcc33da5d0hdd8me46eaeqira.apps.googleusercontent.com",
+              "client_id": "477027457338-o8c47au8qn756b0ilgmgat9pmjpg6din.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "477027457338-euaa7s91f8f7i9632rehonb0dqedm3bo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.metanonia.app"
+              }
             }
           ]
         }

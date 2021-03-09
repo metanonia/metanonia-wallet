@@ -1,9 +1,9 @@
-import 'package:etherwallet/qrcode_reader_page.dart';
-import 'package:etherwallet/service/configuration_service.dart';
-import 'package:etherwallet/wallet_create_page.dart';
-import 'package:etherwallet/wallet_import_page.dart';
-import 'package:etherwallet/wallet_main_page.dart';
-import 'package:etherwallet/wallet_transfer_page.dart';
+import 'package:metanoniawallet/qrcode_reader_page.dart';
+import 'package:metanoniawallet/service/configuration_service.dart';
+import 'package:metanoniawallet/wallet_create_page.dart';
+import 'package:metanoniawallet/wallet_import_page.dart';
+import 'package:metanoniawallet/wallet_main_page.dart';
+import 'package:metanoniawallet/wallet_transfer_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:provider/provider.dart';

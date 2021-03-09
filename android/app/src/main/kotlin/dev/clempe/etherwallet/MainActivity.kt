@@ -1,4 +1,4 @@
-package dev.clempe.etherwallet
+package com.metanonia.wallet
 
 import io.flutter.embedding.android.FlutterActivity
 
