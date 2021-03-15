@@ -70,6 +70,7 @@ class ContractService implements IContractService {
   }
 
   Future<BigInt> getTokenBalance(EthereumAddress from) async {
+    /*
     var response = await client.call(
       contract: contract,
       function: _balanceFunction(),
@@ -77,6 +78,8 @@ class ContractService implements IContractService {
     );
 
     return response.first as BigInt;
+    */
+    return BigInt.from(0);
   }
 
   StreamSubscription listenTransfer(TransferEvent onTransfer, {int take}) {

@@ -10,7 +10,7 @@ import 'package:provider/single_child_widget.dart';
 void main() async {
   // bootstrapping;
   WidgetsFlutterBinding.ensureInitialized();
-  final stores = await createProviders(AppConfig().params["ropsten"]);
+  final stores = await createProviders(AppConfig().params["metanonia"]);
 
   runApp(MainApp(stores));
 }
@@ -26,7 +26,7 @@ class MainApp extends StatelessWidget {
     return MultiProvider(
         providers: stores,
         child: new MaterialApp(
-          title: 'Flutter App',
+          title: 'Metanonia App',
           initialRoute: '/',
           routes: getRoutes(context),
           navigatorObservers: [
