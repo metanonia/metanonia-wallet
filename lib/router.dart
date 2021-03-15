@@ -19,7 +19,7 @@ Map<String, WidgetBuilder> getRoutes(context) {
       var configurationService = Provider.of<ConfigurationService>(context);
       if (configurationService.didSetupWallet())
         return WalletProvider(builder: (context, store) {
-          return WalletMainPage("Your wallet");
+          return WalletMainPage("Metanonia");
         });
 
       return IntroPage();
@@ -46,6 +46,10 @@ Map<String, WidgetBuilder> getRoutes(context) {
     '/qrcode_reader': (BuildContext context) => QRCodeReaderPage(
           title: "Scan QRCode",
           onScanned: ModalRoute.of(context).settings.arguments,
-        )
+        ),
+    '/qr_tracking': (BuildContext context) => QRCodeReaderPage(
+      title: "Scan QRCode",
+      onScanned: ModalRoute.of(context).settings.arguments,
+    )
   };
 }

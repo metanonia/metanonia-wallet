@@ -25,6 +25,7 @@ class Balance extends StatelessWidget {
             data: address ?? "",
             size: 150.0,
           ),
+          /**
           Text(
             "${EthAmountFormatter(tokenBalance).format()} tokens",
             style:
@@ -37,6 +38,7 @@ class Balance extends StatelessWidget {
                 .bodyText2
                 .apply(color: Colors.blueGrey),
           )
+              **/
         ],
       ),
     );

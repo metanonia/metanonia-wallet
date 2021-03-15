@@ -60,6 +60,12 @@ class WalletMainPage extends HookWidget {
             ),
           ),
           IconButton(
+            icon: Icon(Icons.qr_code),
+            onPressed: () {
+              Navigator.of(context).pushNamed("/qr_tracking");
+            },
+          ),
+          IconButton(
             icon: Icon(Icons.send),
             onPressed: () {
               Navigator.of(context).pushNamed("/transfer");

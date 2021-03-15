@@ -14,9 +14,9 @@ class MainMenu extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           ListTile(
-            title: Text("Get tokens"),
-            subtitle: Text("Claim some test tokens"),
-            trailing: Icon(WalletIcons.gem, color: Colors.blue),
+            title: Text("QR tracking"),
+            subtitle: Text("Tracking QR code"),
+            trailing: Icon(Icons.qr_code, color: Colors.blue),
             onTap: () async {
               var url = 'https://faucet.clempe.dev?address=${this.address}';
               if (await canLaunch(url)) {

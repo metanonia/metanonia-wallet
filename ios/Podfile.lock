@@ -179,8 +179,8 @@ SPEC CHECKSUMS:
   FirebaseCore: d3a978a3cfa3240bf7e4ba7d137fdf5b22b628ec
   FirebaseCoreDiagnostics: 770ac5958e1372ce67959ae4b4f31d8e127c3ac1
   FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
-  FirebaseMLCommon: f42d067ca7fed962e09f02ba94a24e06ee50d933
-  FirebaseMLVision: fd7cdd33d067c976c16fd521e7e92c26c980c947
+  FirebaseMLCommon: d218d75dd1c6c4e447f731ac22da56b88cb79431
+  FirebaseMLVision: 68dd092b4c52a7ac163ec0d4f541d5711fc9fec6
   FirebaseMLVisionBarcodeModel: 394cd61c52dc03558088caf82b0dade8028f57d5
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
   GoogleAPIClientForREST: 4bb409633efcc2e1b3f945afe7e35039b5a61db2
@@ -197,4 +197,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 92de5e6e176219356a0144477ff81b3a723353c3
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.10.1
