@@ -19,8 +19,6 @@ class QRCodePage extends StatefulWidget {
 }
 
 class _QRCodePageState extends State<QRCodePage> {
-  static final RegExp _basicAddress =
-      RegExp(r'^(0x)?[0-9a-f]{40}', caseSensitive: false);
   List<Barcode> _scanResults;
   CameraController _camera;
   bool _isDetecting = false;
@@ -69,9 +67,11 @@ class _QRCodePageState extends State<QRCodePage> {
         var msg = "";
         if (_scanResults.length > 0) {
           msg = _scanResults.first.displayValue;
-
+          var logger = Logger();
+          logger.d(msg);
           _isDetecting = true;
           Navigator.of(context).popAndPushNamed("/");
+          return;
         }
 
         _isDetecting = false;
