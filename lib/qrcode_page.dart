@@ -10,19 +10,15 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'utils/detector_painters.dart';
 
-typedef OnScanned = void Function(String address);
-
-class QRCodeReaderPage extends StatefulWidget {
-  QRCodeReaderPage({this.title, this.onScanned, this.closeWhenScanned = true});
-  final OnScanned onScanned;
-  final bool closeWhenScanned;
+class QRCodePage extends StatefulWidget {
+  QRCodePage({this.title});
   final String title;
 
   @override
-  State<StatefulWidget> createState() => _QRCodeReaderPageState();
+  State<StatefulWidget> createState() => _QRCodePageState();
 }
 
-class _QRCodeReaderPageState extends State<QRCodeReaderPage> {
+class _QRCodePageState extends State<QRCodePage> {
   static final RegExp _basicAddress =
       RegExp(r'^(0x)?[0-9a-f]{40}', caseSensitive: false);
   List<Barcode> _scanResults;
@@ -70,16 +66,14 @@ class _QRCodeReaderPageState extends State<QRCodeReaderPage> {
           });
         },
       ).whenComplete(() {
+        var msg = "";
         if (_scanResults.length > 0) {
-          if (widget.onScanned != null)
-            widget.onScanned(_scanResults.first.displayValue);
+          msg = _scanResults.first.displayValue;
 
-          if (widget.closeWhenScanned) {
-            _isDetecting = true; // stop looping
-
-            return;
-          }
+          _isDetecting = true;
+          Navigator.of(context).popAndPushNamed("/");
         }
+
         _isDetecting = false;
       });
     });

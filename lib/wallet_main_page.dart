@@ -62,7 +62,7 @@ class WalletMainPage extends HookWidget {
           IconButton(
             icon: Icon(Icons.qr_code),
             onPressed: () {
-              Navigator.of(context).pushNamed("/qr_tracking");
+              Navigator.of(context).pushNamed("/qrcode_reader");
             },
           ),
           IconButton(

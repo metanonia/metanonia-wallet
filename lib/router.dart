@@ -1,3 +1,4 @@
+import 'package:metanoniawallet/qrcode_page.dart';
 import 'package:metanoniawallet/qrcode_reader_page.dart';
 import 'package:metanoniawallet/service/configuration_service.dart';
 import 'package:metanoniawallet/wallet_create_page.dart';
@@ -43,13 +44,8 @@ Map<String, WidgetBuilder> getRoutes(context) {
             return WalletTransferPage(title: "Send Tokens");
           },
         ),
-    '/qrcode_reader': (BuildContext context) => QRCodeReaderPage(
+    '/qrcode_reader': (BuildContext context) => QRCodePage(
           title: "Scan QRCode",
-          onScanned: ModalRoute.of(context).settings.arguments,
         ),
-    '/qr_tracking': (BuildContext context) => QRCodeReaderPage(
-      title: "Scan QRCode",
-      onScanned: ModalRoute.of(context).settings.arguments,
-    )
   };
 }
