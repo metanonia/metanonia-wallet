@@ -67,16 +67,38 @@ class _QRCodePageState extends State<QRCodePage> {
         var msg = "";
         if (_scanResults.length > 0) {
           msg = _scanResults.first.displayValue;
-          var logger = Logger();
-          logger.d(msg);
-          _isDetecting = true;
-          Navigator.of(context).popAndPushNamed("/");
-          return;
+          showDialog(context: context,
+              builder: (BuildContext context) => _buildPopupDialog(msg, context)
+          );
+         // _isDetecting = true;
+         // Navigator.of(context).popAndPushNamed("/");
+         // return;
         }
 
         _isDetecting = false;
       });
     });
+  }
+
+  Widget _buildPopupDialog(String msg, BuildContext context) {
+    return new AlertDialog(
+      title: const Text("QR Regist"),
+      content: new Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(msg)
+        ],
+      ),
+      actions: <Widget>[
+        new TextButton(
+          onPressed: () {
+            Navigator.of(context).popAndPushNamed("/");
+          },
+          child: const Text('Cancel'),
+        )
+      ],
+    );
   }
 
   Widget _buildResults() {
